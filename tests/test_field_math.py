@@ -38,8 +38,8 @@ class TestModSqrt:
 
     def test_non_residue_raises_or_wrong(self):
         # Not every number has a square root mod p
-        # 3 is not a quadratic residue mod 11
-        assert not is_quadratic_residue(3, 11)
+        # 2 is not a quadratic residue mod 11
+        assert not is_quadratic_residue(2, 11)
 
 
 class TestQuadraticResidue:
@@ -49,5 +49,5 @@ class TestQuadraticResidue:
         assert is_quadratic_residue(4, p)
 
     def test_known_non_residue(self):
-        # 3 has no square root mod 11
-        assert not is_quadratic_residue(3, 11)
+        # 2 has no square root mod 11
+        assert not is_quadratic_residue(2, 11)
